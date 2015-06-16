@@ -7,9 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-  <!-- <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p> -->
   <%= render 'layouts/header'  %>
   <% flash.each do |type, message| %>
     <div class="alert alert-info fade-in">
@@ -18,6 +15,5 @@
     </div>
   <% end %>
 <%= yield %>
-</div>
 </body>
 </html>
